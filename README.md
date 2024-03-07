@@ -1,5 +1,7 @@
 ﻿# My_First_Website
 
+ <font color="blue">Français</font>
+
 # FR -------------- J'ai fait ce site dans le cadre d'un projet scolaire (SAE). Le but était d'y mettre mon CV, me présenter, et d'autres contraintes ...
 
 # Ceci est le tout premier site que j'ai fait. J'aime dire que au moment où je l'ai fait, seul Dieu et moi savions comment ce programme marchait. Désormais seul Dieu le sait ...
@@ -9,6 +11,7 @@
 # Merci beaucoup d'avoir pris le temps de lire ces sottises :) !
 
 
+<font color="blue">English</font>
 
 # EN ------------- I made this website as part of a school project (SAE). The goal was to put my CV there, introduce myself, and meet other constraints...
 
