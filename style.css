@@ -1,0 +1,891 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap');
+
+html {
+    background-color:#303437;
+    cursor:crosshair;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+  font-family: 'Abel', sans-serif;
+ scroll-behavior: smooth;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    position: relative;
+}
+
+/* page 1 HEADER */
+
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #232425  ;
+    color: white;
+
+}
+
+header h1 {
+    display: flex;
+    position: absolute;
+    margin: 20px;
+   
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 s ease-in-out;
+    font-size: 25px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+header h1:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    
+}
+
+
+header nav{
+	vertical-align: top;
+	display:flex;
+	height:100%;
+    justify-content: space-evenly;
+}
+
+header nav ul {
+    display: flex;
+    height: 100%;
+}
+
+header nav ul li {
+    display: flex;
+}
+
+header nav ul li a {
+    display: block;
+    height: 100%;
+    width: 100px;
+    line-height: 70px;
+    text-decoration: none;
+    color: white;
+    text-align: center;   
+}
+
+header nav ul li a:hover {
+    background-color: #404244;
+}
+
+.sec-header {
+    scroll-snap-align: start ; 
+}
+
+
+/* scroll up */
+
+
+.up{
+position: fixed;
+color: rgb(210, 204, 204);
+right: 0;
+bottom: 0;
+z-index: 50;
+margin-right: 10px;
+margin-bottom: 10px;
+}
+
+.up span {
+  font-size: 50px;
+}
+
+
+
+
+/* page 1 presntation */
+
+
+.one {
+    background-color: #303437;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.one img {
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    display: flex;
+    height: 70%;
+    margin-bottom: 5%;
+    width: 35%;
+    margin-right: 5%;
+}
+
+.texte {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-bottom: 15%;
+    height: 50px;
+    width: 500px;
+    color: white;
+}
+
+.texte h1 {
+    font-size: 40px;
+}
+
+.texte p {
+    opacity: 0.9;
+    -webkit-transform: scale(1);
+    transform: (1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 s ease-in-out;
+    font-size: 25px ;
+}
+
+
+.texte p:hover {
+    -webkit-transform: scale(1.07);
+    transform: (1.07);
+}
+
+.scroll{
+    position: absolute;
+    color: white;
+   display: flex ;
+   align-self: end;
+   margin-bottom: 90px;
+   text-decoration: none;
+
+   opacity: 0.5;
+    -webkit-transform: scale(1);
+   transform: scale(1);
+   -webkit-transition: .3s ease-in-out;
+   transition: .3 s ease-in-out; 
+
+
+}
+
+.scroll:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+  
+
+/* PAGE 2 */
+   
+
+.two {
+    display: flex;
+    background-color: #495356;
+    height: 100vh;
+    align-items: center;
+    scroll-snap-align: start;
+    justify-content: center;
+}
+
+.image {
+    position: relative;
+    display: flex;
+    gap: 15px;
+    padding: 50px;
+    flex-direction: column;
+    justify-content: flex-start;
+
+}
+.image img {
+    height: 250px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.image img:hover {
+    opacity: 0.7;
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+
+.two p {
+    font-size: 30px;
+    display: flex;
+    color: white;
+    width: 400px;
+    margin-left: 10%;
+}
+
+
+
+  /* footer */
+  
+  footer {
+    scroll-snap-align: start ;
+    background-color:#232425;
+    height: 70px; 
+    color: aliceblue;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+
+  footer img {
+    height: 50px;
+  }
+ 
+
+  /* 2 EME PAGE HTML (Le Cv) */
+
+  .container {
+    background-color: #303437;
+  }
+
+
+  h2 {
+    color: #c4ced2;
+    font-size: 40px;
+  }
+
+  .aboutme {
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    
+  }
+
+  .aboutme h2 {
+    margin-top: 50px;
+   
+  }
+
+  .aboutme img {
+    height: 500px;
+    width: auto;
+    display: flex;
+    border-radius: 40px;
+  }
+
+  .aboutme p {
+    display: flex;
+    font-size: 25px;
+    color: white;
+    width: 400px;
+    text-align: start;
+    margin-top: 5%;
+  }
+
+
+  .info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+
+    height: 220px;
+  }
+
+  .info h3 {
+    font-size: 40px;
+  }
+
+  .info ul {
+    color: white;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+
+  .info li {
+    margin-top: 10px;
+  }
+
+
+  /* Education */
+
+.education {
+    margin-top: 7%;
+    margin-left: 5%;
+    height: 500px;
+}
+
+  h3 {
+    margin-top: 50px;
+    color: rgb(167, 223, 239);
+    font-size: 25px;
+  }
+
+  .education p {
+    color: white;
+  }
+
+
+  .education div {
+    margin: 50px;
+    margin-left: 15%;
+   
+  }
+
+  .education p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    max-height: 150px;
+  }
+
+
+            /* hardskill----------------- */
+
+  .hardskill {
+    height: 500px;
+  }
+
+  .hardskill h2 {
+    text-align: center;
+  }
+
+  .hardskill img {
+    height: 90px;
+  }
+
+  .hardskill .icon {
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+  }
+
+
+  .hardskill .icon div div {
+      margin-top: 50px;
+  }
+
+  .hardskill .icon div div p {
+    text-align: center;
+    margin-bottom: 5px;
+    color: white;
+  }
+
+  .hardskill .icon div div img {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+
+  .hardskill .icon div div img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+
+
+/* preview du cv */
+.next {
+  height: 250px;
+}
+
+.next a {
+  text-decoration: none;
+  background-color: b;
+}
+
+.next a:hover{
+  cursor:grab;
+}
+
+.next a  {
+  color: black;
+  background-color: #c4ced2;
+  padding: 20px;
+  border-radius: 25px;
+  margin-left: 45%;
+}
+
+.next p a   {
+text-decoration: none;
+color: aqua;
+
+padding: unset;
+border-radius: unset;
+margin-left: unset ;
+background-color: unset;
+}
+
+.next p {
+margin-top: 90px;
+color: white;
+width: 100%;
+text-align: center;
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.popup img {
+  max-width: 80%;
+  max-height: 80%;
+  margin: 5% auto;
+  display: block;
+}
+
+.fermer-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+
+  /* 3 EME PAGE Projet */
+
+
+  .video {
+    background-color: #303437;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+
+  .video video {
+    width: 100%;
+    height: 100%;
+
+
+  }
+
+.video p {
+    position: absolute;
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+    text-shadow: black 1px 5px 5px ;
+
+    font-family: 'Abel', sans-serif;
+font-family: 'Bebas Neue', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Roboto', sans-serif;
+  }
+
+
+.deux {
+    scroll-snap-align: start;
+}
+
+.deux h2 {
+ text-align: center; 
+}
+
+.deux div {
+  display: flex;
+  justify-content: center;
+  gap: 05%;
+  margin-top: 5%; 
+
+}
+
+.deux div div {
+  display: unset;
+  width: 400px; 
+}
+
+.deux div div h3 {
+  width: 600px; 
+}
+
+.deux div div p {
+  margin-top: 20px;
+  font-size: 27px;
+  color: white;
+} 
+
+/* realisation */
+
+.screen {
+  height: 300px;
+}
+
+
+.real h2 {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.real p {
+  text-align: center;
+  color: white;
+}
+
+.real div div p {
+height: 100px;
+width: 500px;
+text-align: center;
+}
+
+.real div {
+  margin-right: 100px;
+  margin-top: 30px;
+  gap: 300px;
+}
+
+.real div div {
+  flex-direction: column;
+}
+
+.real div div img {
+  border-radius: 10px;
+}
+
+
+.avenir p {
+  color: white;
+  text-align: center;
+}
+
+
+.metiers {
+  width: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+.metiers h3 {
+  padding: 20px;
+  font-size: 25pt;
+}
+
+.metiers p {
+  color: white;
+  font-size: 15pt;
+}
+
+
+
+/*  ----------------------PAGE FORMUAIRE ------------------------ */
+
+
+
+.partform {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  margin-top: 10%;
+}
+
+.formtitle {
+  font-size: 60px;
+  align-self: center;
+  margin-bottom: 50px;
+}
+
+.formtitle h1 {
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  color: white; 
+}
+
+.formtitle h2 {
+  font-family: 'Archivo Black', sans-serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
+  color: rgb(128, 186, 190);   font-size: 90px;
+
+}
+
+.form .formulaire {
+  display: flex;
+  justify-content: center;
+}
+
+.formulaire p {
+  font-size: 20px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 5px;
+}
+
+.formulaire input{
+  height: 60px;
+  width: 400px;
+  background-color: #44494d;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formulaire select {
+  height: 60px;
+  width: 405px;
+  font-size: 15px;
+  background-color: #44494d;
+  border: 2px solid rgb(255, 255, 255);
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  border-radius: 5px;
+}
+
+.formulaire select option {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.formulaire textarea {
+  width: 400px;
+  background-color: #44494d;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 15pt;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#sub {
+  width:150px ;
+  height: 30px;
+  float: right;
+  background-color: #44494d;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+iframe {
+margin-left: 35%;
+margin-top: 200px;
+transform: scale(1.7);
+}
+
+
+/* PAGE PASSION */
+
+
+.onepassion {
+  background-color: #303437;
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.onepassion h1 {
+  font-size: 50pt;
+  color: rgb(219, 230, 230);
+}
+
+/* scroll down icone animé */
+
+
+
+.arrow-container {
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotateZ(0deg);
+}
+.arrow-container:hover {
+  cursor: pointer;
+}
+.arrow-container:hover .arrow {
+  top: 50%;
+}
+.arrow-container:hover .arrow:before {
+  transform: translate(-50%, -50%) rotateZ(-30deg);
+}
+.arrow-container:hover .arrow:after {
+  transform: translate(-50%, -50%) rotateZ(30deg);
+}
+
+.arrow {
+  position: absolute;
+  left: 50%;
+  transition: all 0.4s ease;
+}
+.arrow:before, .arrow:after {
+  transition: all 0.4s ease;
+  content: "";
+  display: block;
+  position: absolute;
+  transform-origin: bottom right;
+  background: #fff;
+  width: 4px;
+  height: 50px;
+  border-radius: 10px;
+  transform: translate(-50%, -50%) rotateZ(-45deg);
+}
+.arrow:after {
+  transform-origin: bottom left;
+  transform: translate(-50%, -50%) rotateZ(45deg);
+}
+.arrow:nth-child(1) {
+  opacity: 0.3;
+  top: 35%;
+}
+.arrow:nth-child(2) {
+  opacity: 0.6;
+  top: 55%;
+}
+.arrow:nth-child(3) {
+  opacity: 0.9;
+  top: 75%;
+}
+
+
+/* Fin */
+
+
+.twopassion {
+  display: flex;
+  background-color: #495356;
+  height: 100vh;
+  align-items: center;
+  scroll-snap-align: start;
+  justify-content: center;
+  gap: 10%;
+}
+
+.twopassion div {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-left: 10%;
+}
+
+.twopassion h1 {
+  color: rgb(219, 230, 230);
+  font-size: 50pt;
+}
+
+.twopassion p {
+  margin-top: 10px;
+  font-size: 20pt;
+  width: 500px;
+  color: white;
+}
+
+
+
+@media all and (max-width : 700px) {
+
+  .troispassion #imgbot{
+    position: absolute;
+    bottom: 400px;
+    height: 250px;
+    width: 250px;
+  }
+
+   .troispassion #imgtop{
+  
+    position: absolute;
+    top: 600px;
+    height: 250px;
+    width: 250px;
+  
+  }
+
+
+}
+
+
+.troispassion {
+  display: flex;
+  background-color: #303437;
+  height: 100vh;
+  align-items: center;
+  scroll-snap-align: start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.troispassion div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.troispassion div h1 {
+  font-size: 50pt;
+  color: rgb(219, 230, 230);
+}
+
+.troispassion div p {
+  font-size: 20pt;
+  width: 400px;
+  color: white;
+}
+
+
+.quatrepassion {
+  display: flex;
+  background-color: #495356;
+  height: 100vh;
+  align-items: center;
+  scroll-snap-align: start;
+  justify-content: center;
+  gap: 100px;
+}
+
+.quatrepassion img {
+  height: 500px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.quatrepassion div  {
+  width: 350px;
+  color: white;
+}
+
+.quatrepassion div h1 {
+  font-size: 50pt;
+}
+
+.quatrepassion div p {
+  font-size: 20pt;
+}
+
+
+
+
+
+

@@ -1,0 +1,12 @@
+@charset "ISO-8859-1";
+body {
+    background: #333;
+    font: 12px Arial, Helvetica, sans-serif;
+    color: #fff;
+  }
+  #canvas_holder {
+    margin: 0 auto;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+  }
